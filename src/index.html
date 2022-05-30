@@ -6,15 +6,181 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link rel="stylesheet" href="main.bundle.css" />
+    <style>
+      .container {
+        font-size: 10px;
+        max-width: 800px;
+        margin: 5vh auto 0;
+        position: relative;
+        width: 100%;
+      }
+      .main--picture {
+        position: relative;
+      }
+      .main--picture__image {
+        min-height: 330px;
+        min-width: 480px;
+        width: 60%;
+        height: 30%;
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+      }
+      .main--picture__text {
+        font-size: 2.8rem;
+        font-weight: bolder;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8;
+      }
+      .search {
+        width: 100%;
+        margin: 20px auto;
+      }
+      .search__input {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid blue;
+        font-size: 1.5rem;
+        box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+      }
+      .places {
+        flex-wrap: nowrap;
+        display: flex;
+      }
+      .places__box {
+        flex-grow: 1;
+        width: 22%;
+        padding: 0 15px;
+        cursor: pointer;
+      }
+      .box__image {
+        width: 100%;
+        height: 160px;
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .box__text {
+        text-align: center;
+        font-size: 1.25rem;
+        color: black;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <style class="RWD">
+      @import "variables";
+      @media (min-width: 320px) and (max-width: 480px) {
+        body {
+          background-color: blue;
+        }
+        .main--picture__image {
+        min-height: 330px;
+        min-width: 100%;
+        }
+        .places {
+          margin-top: 20px;
+          display: block;
+        }
+        .places__box {
+          width: 100%;
+          padding: 0;
+          display: block;
+        }
+        .box__image {
+          width: 100%;
+          height: auto;
+        }
+        .box__text {
+          display: none;
+        }
+        .hidden {
+          display: block;
+          position: relative;
+          font-size: 2rem;
+          font-weight: bold;
+          top: -50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.8;
+          color: white;
+        }
+      }
+      @media (min-width: 481px) and (max-width: 768px) {
+        body {
+          background-color: yellow;
+        }
+        .main--picture__image {
+        min-height: 300px;
+        min-width: 450px;
+        }
+        .places {
+          flex-wrap: wrap;
+        }
+        .places__box {
+          width: 40%;
+        }
+      }
+      @media (min-width: 769px) {
+        body {
+          background-color: red;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <div class="header">
-      <h1>Waldi Twoja pierwsza apka z API</h1>
-      <p>Dasz radę!!!</p>
-      <!-- Zrób pierwszą stonę w REMach
-    dodaj jakieś zdjęcie nad wyszukiwarką
-   -->
+    <div class="container">
+      <div class="main--picture">
+        <p class="main--picture__text">Weather App</p>
+        <img
+          class="main--picture__image"
+          src="images/Pogoda.jpg"
+          alt="weather icons"
+        />
+      </div>
+      <div class="search">
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Wyszukaj miasto..."
+        />
+      </div>
+      <!-- fetch (biblioteka)axios
+      jak zainstalowac i jak tworzyc zapytania
+      Napis na zdjeciu przy telefonie (opacity i czcionka biala)-->
+      <div class="places">
+        <div class="places__box image--Ceglow">
+          <img class="box__image" src="images/Cegłów.jpg" alt="city Cegłów" />
+          <p class="box__text">Cegłów</p>
+          <p class="box__text hidden">Cegłów</p>
+        </div>
+        <div class="places__box image--Lublin">
+          <img class="box__image" src="images/Lublin.jpg" alt="city Lublin" />
+          <p class="box__text">Lublin</p>
+          <p class="box__text hidden">Lublin</p>
+        </div>
+        <div class="places__box image--Waraszawa">
+          <img
+            class="box__image"
+            src="images/Warszawa.jpg"
+            alt="city Warszawa"
+          />
+          <p class="box__text">Warszawa</p>
+          <p class="box__text hidden">Warszawa</p>
+        </div>
+        <div class="places__box image--Zwolen">
+          <img class="box__image" src="images/Zwoleń.jpg" alt="city Zwoleń" />
+          <p class="box__text">Zwoleń</p>
+          <p class="box__text hidden">Zwoleń</p>
+        </div>
+      </div>
     </div>
     <script src="main.bundle.js"></script>
   </body>
