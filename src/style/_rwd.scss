@@ -1,0 +1,39 @@
+      @import "variables";
+
+      @media (min-width: $min-mobile) and (max-width: $max-mobile) {
+        .main--picture__image {
+        min-height: 330px;
+        min-width: 100%;
+        }
+        .places {
+          display: block;
+        }
+        .places__box {
+          margin-top: 20px;
+          width: 100%;
+          padding: 0;
+          display: block;
+        }
+        .box__image {
+          width: 100%;
+          height: auto;
+        }
+        .box__text {
+          display: none
+        }
+      }
+      @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+        .main--picture__image {
+        min-height: 300px;
+        min-width: 450px;
+        }
+        .places {
+          flex-wrap: wrap;
+        }
+        .places__box {
+          width: 40%;
+        }
+      }
+      @media (min-width: $deskopt) {
+
+      }

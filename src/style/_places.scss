@@ -1,0 +1,22 @@
+.places {
+  flex-wrap: nowrap;
+  display: flex;
+}
+.places__box {
+  flex-grow: 1;
+  width: 22%;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.box__image {
+  width: 100%;
+  height: 160px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.box__text {
+  text-align: center;
+  font-size: 1.25rem;
+  color: black;
+}
