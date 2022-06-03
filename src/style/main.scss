@@ -1,16 +1,7 @@
 @import "fonts";
-
-h1 {
-    color: red;
-    padding: 2rem 0;
-    font-family: quicksandregular;
-    text-align: center;
-    width: 100%;
-}
-
-p {
-    color: turquoise;
-    font-family: quicksandregular;
-    text-align: center;
-    width: 100%;
-}
+@import "variables";
+@import "container";
+@import "main-picture";
+@import "search";
+@import "places";
+@import "rwd";

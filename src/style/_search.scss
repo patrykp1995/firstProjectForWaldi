@@ -1,0 +1,14 @@
+.search {
+  width: 100%;
+  margin: 20px auto;
+}
+.search__input {
+  display: block;
+  width: 93%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+}
