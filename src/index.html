@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link rel="stylesheet" href="main.bundle.css" />
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <div class="container">
       <div class="main--picture">
-        <p class="main--picture__text">Weather App</p>
+        <h1 class="main--picture__text">Weather App</h1>
         <img
           class="main--picture__image"
           src="images/Weather.jpg"
           alt="weather icons"
         />
       </div>
+      <h2 class="test"></h2>
       <div class="search">
         <input
           class="search__input"
@@ -25,14 +27,15 @@
         />
       </div>
       <div class="places">
-        <div class="places__box">
-          <img class="box__image" src="images/Cegłów.jpg" alt="city Cegłów" /><p class="box__text">Cegłów</p>
+        <div class="places__box" id="ceglow">
+          <img class="box__image" src="images/Cegłów.jpg" alt="city Cegłów" />
+          <p class="box__text">Cegłów</p>
         </div>
-        <div class="places__box">
+        <div class="places__box" id="lublin">
           <img class="box__image" src="images/Lublin.jpg" alt="city Lublin" />
           <p class="box__text">Lublin</p>
         </div>
-        <div class="places__box">
+        <div class="places__box" id="warsaw">
           <img
             class="box__image"
             src="images/Warszawa.jpg"
@@ -40,7 +43,7 @@
           />
           <p class="box__text">Warszawa</p>
         </div>
-        <div class="places__box">
+        <div class="places__box" id="zwolen">
           <img class="box__image" src="images/Zwoleń.jpg" alt="city Zwoleń" />
           <p class="box__text">Zwoleń</p>
         </div>
