@@ -14,10 +14,12 @@ for (const box of placesBoxes) {
       let name = data.city.name
       let population = data.city.population
       let pressure = data.list[0].main.pressure
+      let weather = data.list[0].weather[0].main
       test.innerHTML = `Kraj: ${country}`
       test.insertAdjacentHTML("afterbegin", `<h2>Nazwa miasta: ${name}</h2>`)
       test.insertAdjacentHTML("afterbegin", `<h2>Populacja: ${population} mieszkańców</h2>`)
       test.insertAdjacentHTML("afterbegin", `<h2>hPa: ${pressure}</h2>`)
+      test.insertAdjacentHTML("afterbegin", `<h2>ikonka: ${weather}</h2>`)
     })
     .catch(error => console.error(error))
   });
