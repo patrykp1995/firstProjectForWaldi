@@ -2,21 +2,19 @@
   position: relative;
 }
 .main--picture__image {
-  min-height: 330px;
-  min-width: 480px;
-  width: 60%;
-  height: 30%;
-  margin: 0 auto;
+  max-width: 100%;
   border-radius: 10px;
-  display: block;
-  align-items: center;
 }
 .main--picture__text {
-  font-size: 2.8rem;
+  margin: 0;
+  font-size: 4em;
   font-weight: bolder;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.8;
+  opacity: 0.75;
+  border-radius: 10px;
+  background: white;
+  text-wrap: nowrap;
 }

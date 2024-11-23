@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Weather App</title>
-		<link rel="stylesheet" href="/src/style/main.css" />
+		<link rel="stylesheet" href="src/style/main.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -24,40 +24,7 @@
 					placeholder="Wyszukaj miasto..."
 				/>
 			</div>
-			<div class="places">
-				<div class="places__box">
-					<img
-						class="box__image"
-						src="/src/images/Cegłów.jpg"
-						alt="city Cegłów"
-					/>
-					<p class="box__text">Cegłów</p>
-				</div>
-				<div class="places__box">
-					<img
-						class="box__image"
-						src="/src/images/Lublin.jpg"
-						alt="city Lublin"
-					/>
-					<p class="box__text">Lublin</p>
-				</div>
-				<div class="places__box">
-					<img
-						class="box__image"
-						src="/src/images/Warszawa.jpg"
-						alt="city Warszawa"
-					/>
-					<p class="box__text">Warszawa</p>
-				</div>
-				<div class="places__box">
-					<img
-						class="box__image"
-						src="/src/images/Zwoleń.jpg"
-						alt="city Zwoleń"
-					/>
-					<p class="box__text">Zwoleń</p>
-				</div>
-			</div>
+			<div id="weather-container" class="weather-container"></div>
 		</div>
 		<script src="src/scripts/main.js"></script>
 	</body>
