@@ -1,32 +1,67 @@
 ## firstProjectForWaldi
 
-weather vanilla js app with free api
+Weather app with free api
 
-public api
-https://openweathermap.org/
+public api: https://openweathermap.org/
 
 for install properties
 -> npm install
 
 for open local version
-gulp dev
-
-for build production version
-gulp build
+-> npm run dev
 
 ============
 
 SCOPE:
 Build weather aplication like this site : https://mattthedev-next-weather-app.vercel.app/
 
-searchbar for city, inside show weather details for current day, and for next week, show icon with weather, information about sunrise and sunset, above searchbar add header with same width like rest content.
-Focus on functionality, but remember about RWD.
+searchbar for city, inside show weather details for current day, and for next week, show icon with weather, information about sunrise and sunset, above searchbar add header with same width like rest content. Focus on functionality, but remember about RWD.
 
-About flow our work,
-I will give you some task, and when you end your work, try to create pull request on github,
+About flow our work:
+I will give you some task, and when you end your work, try to create pull request on github.
 
-about git tree -> our produciton branch is ,main'.
+About git tree -> our produciton branch is ,main'.
 For every new step on our app, you need to create new branch and new pull request to accept your code in production line.
 
 this can help you understand flow
 https://www.youtube.com/watch?v=Uszj_k0DGsg&list=LL&index=31&t=8s
+
+============
+
+STEP 1 (after restarting project):
+
+- naprawa paczek (DONE)
+
+- vite zamiast gulp (DONE)
+
+- dodanie prostego JS i obslugi API (DONE)
+
+- zrobić żeby to znowu działało i dało się zbudować (DONE)
+
+STEP 2:
+
+- zmiana nazw elementów i plików + BEM -> weather_list--card
+
+- nie używamy pixeli nigdzie, albo wszedzie rem albo em
+
+- css na 2 foldery -> rwd i variable w jeden, komponenty w drugi
+
+- dodać dotenv żeby schować klucz
+
+- komentarze do usunięcia
+
+- fetch do zmiany na async/await
+
+- obsługa błędu w renderWeatherCard / czy wystepują wszystkie dane
+
+- podmienić readme na bardziej aktualne.
+
+- dodac TSa
+
+STEP 3:
+
+- dzialajaca wyszukiwarka ??
+
+- dodać testy 
+
+- odpalic prettiera
