@@ -1,15 +1,18 @@
+@import "variables";
+
 .search {
   width: 100%;
   display: flex;
   margin: 20px auto;
 }
+
 .search__input {
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid blue;
-  font-size: 1.5rem;
+  padding: $standard-padding;
+  border-radius: $border-radius;
+  border: 2px solid $main-color;
+  font-size: 1.5em;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
 }

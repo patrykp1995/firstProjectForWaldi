@@ -1,9 +1,12 @@
 @font-face {
   font-family: "quicksandregular";
-  src: url("/fonts/quicksand-regular-webfont.woff2") format("woff2"), url("/fonts/quicksand-regular-webfont.woff") format("woff");
+  src:
+    url("/fonts/quicksand-regular-webfont.woff2") format("woff2"),
+    url("/fonts/quicksand-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 .container {
   font-size: 10px;
   max-width: 800px;
@@ -48,7 +51,7 @@
   padding: 10px;
   border-radius: 10px;
   border: 2px solid blue;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
 }
 
@@ -64,7 +67,7 @@
   font-size: 1.25em;
 }
 
-.weather-container {
+.weather-card-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +79,10 @@
     min-height: 250px;
     min-width: 100%;
   }
+
   .main--picture__text {
-    font-size: 2.2rem;
+    font-size: 2.2em;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

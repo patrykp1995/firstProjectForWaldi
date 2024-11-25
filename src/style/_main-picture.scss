@@ -1,10 +1,14 @@
+@import "variables";
+
 .main--picture {
   position: relative;
 }
+
 .main--picture__image {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: $border-radius;
 }
+
 .main--picture__text {
   margin: 0;
   font-size: 4em;
@@ -14,7 +18,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.75;
-  border-radius: 10px;
+  border-radius: $border-radius;
   background: white;
   text-wrap: nowrap;
+}
+
+@media (max-width: $max-mobile) {
+  .main--picture__image {
+    min-height: 250px;
+    min-width: 100%;
+  }
+
+  .main--picture__text {
+    font-size: 2.2em;
+  }
 }

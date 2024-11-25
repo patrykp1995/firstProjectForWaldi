@@ -40,28 +40,30 @@ STEP 1 (after restarting project):
 
 STEP 2:
 
-- zmiana nazw elementów i plików + BEM -> weather_list--card
+- zmiana nazw elementów i plików + BEM -> weather_list--card (DONE)
 
-- nie używamy pixeli nigdzie, albo wszedzie rem albo em
+- nie używamy pixeli nigdzie, albo wszedzie rem albo em (DONE)
 
-- css na 2 foldery -> rwd i variable w jeden, komponenty w drugi
+- podmienić readme na bardziej aktualne. (DONE)
 
-- dodać dotenv żeby schować klucz
+- dodać dotenv żeby schować klucz (DONE)
 
-- komentarze do usunięcia
+- komentarze do usunięcia (DONE)
 
 - fetch do zmiany na async/await
 
 - obsługa błędu w renderWeatherCard / czy wystepują wszystkie dane
 
-- podmienić readme na bardziej aktualne.
+- css na 2 foldery -> rwd i variable w jeden, komponenty w drugi
 
 - dodac TSa
 
 STEP 3:
 
+- usunąć z konsoli {http://localhost:5173/favicon.ico [HTTP/1.1 404 Not Found 0ms]} (DONE)
+
 - dzialajaca wyszukiwarka ??
 
-- dodać testy 
+- dodać testy
 
-- odpalic prettiera
+- odpalic prettiera (DONE)

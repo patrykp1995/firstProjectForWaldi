@@ -1,31 +1,32 @@
 <!doctype html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Weather App</title>
-		<link rel="stylesheet" href="src/style/main.css" />
-	</head>
-	<body>
-		<div class="container">
-			<div class="main--picture">
-				<p class="main--picture__text">Weather App</p>
-				<img
-					class="main--picture__image"
-					src="/src/images/Weather.jpg"
-					alt="weather icons"
-				/>
-			</div>
-			<div class="search">
-				<input
-					class="search__input"
-					type="text"
-					placeholder="Wyszukaj miasto..."
-				/>
-			</div>
-			<div id="weather-container" class="weather-container"></div>
-		</div>
-		<script src="src/scripts/main.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style/main.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main--picture">
+        <p class="main--picture__text">Weather App</p>
+        <img
+          class="main--picture__image"
+          src="/src/images/Weather.jpg"
+          alt="weather icons"
+        />
+      </div>
+      <div class="search">
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Wyszukaj miasto..."
+        />
+      </div>
+      <div id="weather-card-list" class="weather-card-list"></div>
+    </div>
+    <script src="src/scripts/main.js" type="module"></script>
+  </body>
 </html>
